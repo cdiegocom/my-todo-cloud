@@ -42,7 +42,7 @@ after_success:
   # Take the built production images and push to Docker Hub
   - docker-compose -f docker-compose.yml -f docker-compose.prod.yml push
 
- deploy:
+deploy:
   provider: elasticbeanstalk
   region: ca-central-1
   app: Todo Aplication
